@@ -21,6 +21,6 @@ if i=="d":
     print(message)
 if i=="q":
     print("Goodbye!")
-elif:
+elif not i=="e" or i =="d" or i=="q":
     print("Did not understand command, try again.")
 
