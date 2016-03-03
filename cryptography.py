@@ -14,7 +14,9 @@ i = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 if i=="e":
     message=input("Message: ")
     key=str(input("Key: "))
-    l=len(message)
+    m=len(message)
+    k=len(key)
+    if x is
     print(message)
 if i=="d":
     print(message)
