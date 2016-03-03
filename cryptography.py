@@ -29,9 +29,7 @@ if i=="e":
                 kelt.append(associations.find(message[y]))
     print(message)
 if i=="d":
-    print(key)
-    print(message)
-    print(message)
+    print(let)
 if i=="q":
     print("Goodbye!")
 elif not i=="e" or i =="d" or i=="q":
