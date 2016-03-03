@@ -23,7 +23,7 @@ if i=="e":
         k=len(key)
         if k<1:
             for y in range (0,k):
-                
+                kelt.append(associations.find(message[y]))
     print(message)
 if i=="d":
     print(key)
