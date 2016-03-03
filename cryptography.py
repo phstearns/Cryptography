@@ -27,7 +27,7 @@ if i=="e":
     for y in range (0,k):
         kelt.append(associations.find(message[y]))
     q=l-k
-    kelt.append(associations.find(message[-q]))
+    kelt.append(associations.find(message[1]))
     print(kelt)
 if i=="d":
     print(let)
