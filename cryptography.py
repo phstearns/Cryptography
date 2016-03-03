@@ -28,7 +28,7 @@ if i=="e":
         kelt.append(associations.find(message[y]))
     q=l-k
     kelt.append(associations.find(message[-q]))
-    print(message)
+    print(kelt)
 if i=="d":
     print(let)
 if i=="q":
