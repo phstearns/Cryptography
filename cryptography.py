@@ -23,8 +23,8 @@ if i=="e":
         let.append(associations.find(message[x]))
     for y in range (0,k):
         kelt.append(associations.find(message[y]))
-    b=l-k
-    kelt.append(associations.find(message[b]))
+    q=l-k
+    kelt.append(associations.find(message[-q]))
     print(message)
 if i=="d":
     print(let)
