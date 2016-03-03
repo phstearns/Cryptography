@@ -16,11 +16,12 @@ if i=="e":
     key=str(input("Key: "))
     m=len(message)
     k=len(key)
-    if x is
+    for x in (0,m):
+        let.append(associations.find(message[x]))
     print(message)
 if i=="d":
-    print(message)
     print(key)
+    print(message)
     print(message)
 if i=="q":
     print("Goodbye!")
