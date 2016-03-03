@@ -13,7 +13,8 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 i = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 if i=="e":
     message=input("Message: ")
-    key=input("Key: ")
+    key=str(input("Key: "))
+    l=len(message)
     print(message)
 if i=="d":
     print(message)
