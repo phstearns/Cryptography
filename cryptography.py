@@ -14,6 +14,8 @@ let=[]
 kelt=[]
 
 i = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+if i not in('e','d','q'):
+    print("Did not understand command, try again.")
 if i=="e":
     message=input("Message: ")
     key=str(input("Key: "))
@@ -30,5 +32,3 @@ if i=="d":
     print(let)
 if i=="q":
     print("Goodbye!")
-elif not i=="e" or i =="d" or i=="q":
-    print("Did not understand command, try again.")
