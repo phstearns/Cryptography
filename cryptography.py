@@ -18,6 +18,12 @@ if i=="e":
     k=len(key)
     for x in (0,m):
         let.append(associations.find(message[x]))
+    while k<1:
+        a=len(let)
+        k=len(key)
+        if k<1:
+            for y in range (0,k):
+                
     print(message)
 if i=="d":
     print(key)
