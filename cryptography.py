@@ -36,12 +36,13 @@ while quit == False:
             let.append(associations.find(message[x]))
         for y in range (0,m):
             kelt.append(associations.find(newkey[y]))
-        for x in range (0,m):
-            if (let[x]-kelt[x])>85:
-                comb.append((let[x] - kelt[x]) % 85)
+        for c in range (0,len(kelt)):
+            r = (let[c] + kelt[c]) % 85
+            comb.append(associations[r-1])
         print(comb, end="")
     if i=="d":
-        print
+        
+        print(let)
     if i=="q":
         print("Goodbye!")
         quit = True
