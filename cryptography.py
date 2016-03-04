@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Payton
-Credit: Avery, Daniel
+Credit: Avery, Daniel, Morgan
 
 Assignment:
 
