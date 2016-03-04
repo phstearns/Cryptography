@@ -12,24 +12,29 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 let=[]
 kelt=[]
+quit = False
 
-i = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-if i not in('e','d','q'):
-    print("Did not understand command, try again.")
+while !quit:
     i = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-if i=="e":
-    message=input("Message: ")
-    key=str(input("Key: "))
-    m=len(message)
-    k=len(key)
-    for x in (0,m):
-        let.append(associations.find(message[x]))
-    for y in range (0,k):
-        kelt.append(associations.find(message[y]))
-    q=l-k
-    kelt.append(associations.find(message[1]))
-    print(kelt)
-if i=="d":
-    print(let)
-if i=="q":
-    print("Goodbye!")
+    if i not in('e','d','q'):
+        print("Did not understand command, try again.")
+        i = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    if i=="e":
+        message=input("Message: ")
+        key=str(input("Key: "))
+        m=len(message)
+        k=len(key)
+        for x in (0,m):
+            let.append(associations.find(message[x]))
+        for y in range (0,k):
+            kelt.append(associations.find(message[y]))
+        q=l-k
+        kelt.append(associations.find(message[1]))
+        print(kelt)
+    if i=="d":
+        print(let)
+    if i=="q":
+        print("Goodbye!")
+        quit = True
+        
+        
