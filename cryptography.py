@@ -24,11 +24,11 @@ while quit == False:
         key=str(input("Key: "))
         m=len(message)
         k=len(key)
-        for x in (0,m):
+        for x in (0,m-1):
             let.append(associations.find(message[x]))
-        for y in range (0,k):
+        for y in range (0,k-1):
             kelt.append(associations.find(message[y]))
-        q=l-k
+        q=m-k
         kelt.append(associations.find(message[1]))
         print(kelt)
     if i=="d":
