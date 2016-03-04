@@ -30,7 +30,7 @@ while quit == False:
             newkey = count + trun
             print(newkey, message)
         elif k>m:
-            newkey = key[0:(m-1)] 
+            newkey = key[0:m] 
             print(newkey, message)
         for x in (0,m-1):
             let.append(associations.find(message[x]))
