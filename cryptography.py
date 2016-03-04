@@ -34,7 +34,7 @@ while quit == False:
             print(newkey, message)
         for x in (0,m-1):
             let.append(associations.find(message[x]))
-        for y in range (0,k-1):
+        for y in range (0,m-1):
             kelt.append(associations.find(newkey[y]))
         q=m-k
         kelt.append(associations.find(message[1]))
