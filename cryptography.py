@@ -12,7 +12,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 let=[]
 kelt=[]
-comb = zip(list(let, kelt))
+comb =[]
 quit = False
 
 while quit == False:
@@ -39,7 +39,8 @@ while quit == False:
             kelt.append(associations.find(newkey[y]))
         for c in (0,len(let)):
             r = let[c] + kelt[c]
-            comb.append(r)
+            comb.append(associations[r])
+            print(comb)
     if i=="d":
         
         print(let)
