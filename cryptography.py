@@ -41,7 +41,6 @@ while quit == False:
                 comb.append((let[x] - kelt[x]) % 85)
         print(comb, end="")
     if i=="d":
-        
     if i=="q":
         print("Goodbye!")
         quit = True
