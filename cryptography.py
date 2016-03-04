@@ -37,7 +37,7 @@ while quit == False:
             let.append(associations.find(message[x]))
         for y in range (0,m-1):
             kelt.append(associations.find(newkey[y]))
-        for c in range (0,len(kelt)-1):
+        for c in range (0,len(kelt)):
             r = (let[c] + kelt[c]) % 85
             comb.append(associations[r-1])
         print(comb)
