@@ -21,9 +21,13 @@ while quit == False:
         i = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if i=="e":
         message=input("Message: ")
-        key=str(input("Key: "))
+        key=input("Key: ")
         m=len(message)
         k=len(key)
+        if m>k:
+            count = key * ((m-(m%k))/k)
+            trun = key[0:(m%k)]
+            newkey = count + trun
         for x in (0,m-1):
             let.append(associations.find(message[x]))
         for y in range (0,k-1):
@@ -32,6 +36,7 @@ while quit == False:
         kelt.append(associations.find(message[1]))
         print(kelt)
     if i=="d":
+        
         print(let)
     if i=="q":
         print("Goodbye!")
