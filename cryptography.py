@@ -14,7 +14,7 @@ let=[]
 kelt=[]
 quit = False
 
-while !quit:
+while quit == False:
     i = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if i not in('e','d','q'):
         print("Did not understand command, try again.")
