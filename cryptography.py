@@ -38,7 +38,7 @@ while quit == False:
             kelt.append(associations.find(newkey[y]))
         for c in range (0,len(kelt)):
             r = (let[c] + kelt[c]) % 85
-            comb.append(associations[r-1])
+            comb.append(associations[r])
         print(comb, end="")
     if i=="d":
         
