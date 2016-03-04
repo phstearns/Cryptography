@@ -25,7 +25,7 @@ while quit == False:
         m=len(message)
         k=len(key)
         if m>k:
-            count = key * ((m-(m%k))/k)
+            count = key * int((m-(m%k))/k)
             trun = key[0:(m%k)]
             newkey = count + trun
             print(newkey, message)
