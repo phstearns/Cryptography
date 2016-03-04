@@ -33,7 +33,7 @@ while quit == False:
         elif k>m:
             newkey = key[0:m] 
             print(newkey, message)
-        for x in (0,m-1):
+        for x in range (0,m-1):
             let.append(associations.find(message[x]))
         for y in range (0,m-1):
             kelt.append(associations.find(newkey[y]))
