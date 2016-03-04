@@ -28,6 +28,7 @@ while quit == False:
             count = key * ((m-(m%k))/k)
             trun = key[0:(m%k)]
             newkey = count + trun
+            print(newkey, message)
         for x in (0,m-1):
             let.append(associations.find(message[x]))
         for y in range (0,k-1):
