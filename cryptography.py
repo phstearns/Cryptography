@@ -47,7 +47,7 @@ while quit == False:
         if m>k:
             count = key * int((m-(m%k))/k)
             trun = key[0:(m%k)]
-            newkey = count + trun
+            newkey = count - trun
         elif k>m:
             newkey = key[0:m] 
             print(newkey, message)
@@ -56,7 +56,7 @@ while quit == False:
         for y in range (0,m):
             kelt.append(associations.find(newkey[y]))
         for c in range (0,len(kelt)):
-            r = (let[c] + kelt[c]) % 85
+            r = (let[c] - kelt[c]) % 85
             comb.append(associations[r])
         print("".join([x for x in comb]), end="")
         print()
