@@ -65,5 +65,3 @@ while quit == False:
     if i=="q":
         print("Goodbye!")
         quit = True
-        
-        
