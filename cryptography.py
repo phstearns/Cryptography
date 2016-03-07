@@ -42,7 +42,6 @@ while quit == False:
         print("".join([x for x in comb]), end="")
 print()
     if i=="d":
-        
         print(let)
     if i=="q":
         print("Goodbye!")
