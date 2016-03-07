@@ -41,6 +41,7 @@ while quit == False:
             comb.append(associations[r])
         print("".join([x for x in comb]), end="")
 print()
+
     if i=="d":
         print(let)
     if i=="q":
