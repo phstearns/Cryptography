@@ -47,11 +47,11 @@ while quit == False:
         m=len(message)
         k=len(key)
         if m>k:
-            count = message * int((k-(k%m))/m)
-            trun = message[0:(k%m)]
+            count = key * int((m-(m%k))/k)
+            trun = key[0:(m%k)]
             newkey = count + trun
         elif k>m:
-            newkey = message[0:k] 
+            newkey = key[0:m] 
             print(newkey, message)
         for x in range (0,m):
             let.append(associations.find(message[x]))
