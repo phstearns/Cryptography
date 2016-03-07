@@ -43,7 +43,7 @@ while quit == False:
         print()
     if i=="d":
         message=input("Message: ")
-        key=input(Key: ")
+        key=input("Key: ")
         if m>k:
             count = key * int((m-(m%k))/k)
             trun = key[0:(m%k)]
