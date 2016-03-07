@@ -47,18 +47,18 @@ while quit == False:
         m=len(message)
         k=len(key)
         if m>k:
-            count = key * int((m-(m%k))/k)
-            trun = key[0:(m%k)]
-            newkey = count - trun
+            count = message * int((k-(k%m))/m)
+            trun = message[0:(k%m)]
+            newkey = count + trun
         elif k>m:
-            newkey = key[0:m] 
+            newkey = message[0:k] 
             print(newkey, message)
         for x in range (0,m):
             let.append(associations.find(message[x]))
         for y in range (0,m):
             kelt.append(associations.find(newkey[y]))
         for c in range (0,len(kelt)):
-            r = (let[c] - kelt[c]) % 85
+            r = (let[c] + kelt[c]) % 85
             comb.append(associations[r])
         print("".join([x for x in comb]), end="")
         print()
