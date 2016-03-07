@@ -51,11 +51,11 @@ while quit == False:
             trun = key[0:(m%k)]
             newkey = count + trun
         elif k>m:
-            newkey = key[0:k] 
+            newkey = key[0:m] 
             print(newkey, message)
-        for x in range (0,k):
+        for x in range (0,m):
             let.append(associations.find(message[x]))
-        for y in range (0,k):
+        for y in range (0,m):
             kelt.append(associations.find(newkey[y]))
         for c in range (0,len(kelt)):
             r = (let[c] + kelt[c]) % 85
