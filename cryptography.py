@@ -44,6 +44,8 @@ while quit == False:
     if i=="d":
         message=input("Message: ")
         key=input("Key: ")
+        m=len(message)
+        k=len(key)
         if m>k:
             count = key * int((m-(m%k))/k)
             trun = key[0:(m%k)]
