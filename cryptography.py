@@ -39,8 +39,7 @@ while quit == False:
         for c in range (0,len(kelt)):
             r = (let[c] + kelt[c]) % 85
             comb.append(associations[r])
-        print("".join([x for x in comb]), end="")
-    print()
+        print("".join([x for x in comb]), end=" ")
     if i=="d":
         print(let)
     if i=="q":
