@@ -42,7 +42,9 @@ while quit == False:
         print("".join([x for x in comb]), end="")
         print()
     if i=="d":
-        print(let)
+        message=input("Message: ")
+        key=input(Key: ")
+        
     if i=="q":
         print("Goodbye!")
         quit = True
