@@ -10,9 +10,6 @@ Write and submit a program that encrypts and decrypts user data.
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
-let=[]
-kelt=[]
-comb =[]
 quit = False
 
 while quit == False:
@@ -25,6 +22,9 @@ while quit == False:
         key=input("Key: ")
         m=len(message)
         k=len(key)
+        let=[]
+        kelt=[]
+        comb =[]
         if m>k:
             count = key * int((m-(m%k))/k)
             trun = key[0:(m%k)]
