@@ -50,6 +50,7 @@ while quit == False:
             count = key * int((m-(m%k))/k)
             trun = key[0:(m%k)]
             newkey = count + trun
+            print(newkey)
         elif m>k:
             newkey = key[0:m] 
             print(newkey, message)
