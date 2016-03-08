@@ -42,6 +42,9 @@ while quit == False:
         print("".join([x for x in comb]), end="")
         print()
     if i=="d":
+        kelt=[]
+        let=[]
+        comb=[]
         message=input("Message: ")
         key=input("Key: ")
         m=len(message)
