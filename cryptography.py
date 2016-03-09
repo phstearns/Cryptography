@@ -49,11 +49,11 @@ while quit == False:
         key=input("Key: ")
         m=len(message)
         k=len(key)
-        if k>m:
+        if m>k:
             count = key * int((m-(m%k))/k)
             trun = key[0:(m%k)]
             newkey = count + trun
-        elif m>k:
+        elif k>m:
             newkey = key[0:m] 
             print(newkey, message)
         for x in range (0,m):
